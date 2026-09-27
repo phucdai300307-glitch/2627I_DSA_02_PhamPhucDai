@@ -1,0 +1,5 @@
+do cấu trúc FIFO nê khi đưa vào theo thứ tự 0123456789 thì dù enquene hay dequene
+thì in ra cũng luôn phải theo đúng thứ tự 0123456789
+do khi dequene thì số đc đưa ra luôn ở đầu hàng đợi nên thứ tự dequene ra sẽ không thay đổi
+do đó chỉ có chuổi ở ý a là hợp lệ
+ 

@@ -1,0 +1,10 @@
+các chuỗi không thể là b, f ,g
+chuỗi b: 4 6 8 7 5 3 2 9 0 1
+ để in ra 4 ở đầu trong stack phải có [0,1,2,3]
+ lúc này 1 ở trên 0 thì 1 phải in ra trước 0 mà ở cuối chuỗi là 01 nên chuỗi không tồn tại
+chuỗi f: 0 4 6 5 3 8 1 7 2 9
+ số đầu tiên in là 0 lúc này stack rỗng sau đó pop ra 4 lúc này trong stack phải là [1,2,3]
+ vì vậy khi in ra 3 phải đứng trước 2 và 2 trước 1 mà t thấy trong chuỗi 1 trước 2 nên chuỗi không tồn tại
+chuỗi g: 1 4 7 9 8 6 5 3 0 2
+ sau 2 lần pop đầu in ra 1 và 4 lúc này stack còn là [0,2,3]
+ nghĩa là 2 phải được pop ra trước 0 mà cuỗi chuỗi là 02 nên chuỗi không tồn tại

@@ -2,7 +2,8 @@
     ở bước union(0,2) chỉ có 0 và 2 là liên thông
     lỗi xảy ra vì khi chạy vòng i giá trị leader[p] có thể thay đổi mà không được lưu lại
     lúc này ở các vòng tiếp theo, giá trị leader[p] đã thay đổi nên khi so sánh có thể xảy ra sai lệch
-    để fix bug chỉ cần lưu lại giá trị leader[p] trước khi chạy vòng lặp so sánh */
+    để fix bug chỉ cần lưu lại giá trị leader[p] trước khi chạy vòng lặp so sánh 
+*/
 
 // trước khi fix
 public void union(int p, int q) {
