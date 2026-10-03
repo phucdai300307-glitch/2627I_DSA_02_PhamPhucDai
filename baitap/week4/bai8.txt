@@ -1,0 +1,17 @@
+BÀI 8: SẮP XẾP VÀ DANH SÁCH LIÊN KẾT (LINKEDLIST)
+
+Đối với Sắp xếp Chọn (Selection Sort): KHÔNG NÊN
+
+Lý do: Bản chất của Selection Sort là tìm phần tử nhỏ nhất và hoán vị (swap) nó với phần tử ở vị trí đang xét.
+
+Nếu dùng Mảng (Array): Việc hoán vị giữa arr[i] và arr[min_index] chỉ tốn chi phí thời gian O(1) do mảng hỗ trợ truy xuất ngẫu nhiên qua chỉ số (index).
+
+Nếu dùng LinkedList: LinkedList không hỗ trợ truy xuất ngẫu nhiên. Để lấy phần tử ở vị trí 'i' hay 'min_index' để đổi chỗ, bạn phải duyệt tuần tự từ đầu danh sách (tốn thời gian O(N)). Điều này làm thuật toán bị chậm đi rất nhiều và các thao tác xử lý con trỏ cũng rất phức tạp, cồng kềnh.
+
+Đối với Sắp xếp Chèn (Insertion Sort): RẤT NÊN / RẤT PHÙ HỢP
+
+Lý do: Bản chất của Insertion Sort là lấy một phần tử và "chèn" nó vào đúng vị trí trong phần danh sách đã được sắp xếp trước đó.
+
+Nếu dùng Mảng (Array): Khi tìm được vị trí cần chèn, bạn bắt buộc phải dịch chuyển (shift) toàn bộ các phần tử lớn hơn lùi về sau 1 ô để tạo khoảng trống cho phần tử mới. Thao tác dịch chuyển hàng loạt này tốn rất nhiều thời gian, là nhược điểm lớn nhất của thuật toán này khi chạy trên mảng.
+
+Nếu dùng LinkedList: Thao tác chèn được tối ưu tuyệt đối. Bạn không cần phải dịch chuyển bất kỳ dữ liệu nào. Việc chèn 1 phần tử (node) vào giữa danh sách chỉ đơn giản là thao tác bẻ và cập nhật lại liên kết (con trỏ) của node đứng trước và đứng sau nó, tốn chi phí O(1) thao tác bộ nhớ. Điều này khắc phục triệt để nhược điểm di chuyển dữ liệu của mảng.
