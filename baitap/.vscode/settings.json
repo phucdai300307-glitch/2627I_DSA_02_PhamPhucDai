@@ -1,9 +1,0 @@
-{
-    "java.project.sourcePaths": [
-        "week3"
-    ],
-    "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar"
-    ]
-}
